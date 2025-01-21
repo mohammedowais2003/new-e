@@ -31,7 +31,7 @@ export function NavBar() {
   }
 
   return (
-    <nav className="bg-[#FBEBB5] px-6 py-4">
+    <nav className="bg-transparent px-6 py-4">
       <div className="flex items-center justify-between">
         {/* Left Section - Logo or brand (optional, add if needed) */}
         <div className="flex items-center">

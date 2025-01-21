@@ -5,7 +5,7 @@ import Image from "next/image";
   return (
     <>
       {/* First Section: Hero Section */}
-      <section className="bg-amber-100 flex items-center justify-center h-[100vh]">
+      <section className="bg-amber-100 flex items-center justify-center h-100%">
         {/* Left Section */}
         <div className="flex flex-col items-start justify-center w-1/2 pl-10">
           <h1 className="text-4xl font-bold text-black mb-4">
