@@ -87,6 +87,7 @@ import Image from "next/image";
               />
               <h3 className="text-sm font-semibold mt-2">Trenton modular sofa_3</h3>
               <p className="text-lg font-bold">Rs. 25,000.00</p>
+              
             </div>
             <div className="text-center">
               <Image
@@ -98,6 +99,9 @@ import Image from "next/image";
               />
               <h3 className="text-sm font-semibold mt-2">Granite dinning table with dining chair</h3>
               <p className="text-lg font-bold">Rs. 25,000.00</p>
+              <div ><a href="#" className=" text-center underline text-sm mb-4">
+              View More
+            </a></div>
             </div>
             <div className="text-center">
               <Image
@@ -109,6 +113,9 @@ import Image from "next/image";
               />
               <h3 className="text-sm font-semibold mt-2">Outdoor bar table and stool </h3>
               <p className="text-lg font-bold">Rs. 25,000.00</p>
+              <div ><a href="#" className=" text-center underline text-sm mb-4">
+              View More
+            </a></div>
             </div>
             <div className="text-center">
               <Image
@@ -120,10 +127,11 @@ import Image from "next/image";
               />
               <h3 className="text-sm font-semibold mt-2 ">Plain console with teak mirror</h3>
               <p className="text-lg font-bold">Rs. 25,000.00</p>
-            </div>
-            <div ><a href="#" className=" text-center underline text-sm mb-4">
+              <div ><a href="#" className=" text-center underline text-sm mb-4">
               View More
             </a></div>
+            </div>
+            
           </div>
         </div>
       </section>

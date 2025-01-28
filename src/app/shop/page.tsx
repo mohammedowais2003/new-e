@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NavBar } from '../components/navbar';
 import { Footer } from '../components/footer';
+import ProductPage from '../products/page';
 
 const Shop = () => {
   return (
@@ -285,6 +286,7 @@ const Shop = () => {
   </div>
 </section>
 
+<ProductPage/>
 
 <Footer/>
 
