@@ -8,7 +8,7 @@ import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react'
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
+  const [,setIsMobile] = useState(false)
 
   useEffect(() => {
     const checkIsMobile = () => {
