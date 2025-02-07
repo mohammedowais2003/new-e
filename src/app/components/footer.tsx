@@ -2,87 +2,85 @@ import React from 'react'
 
 export const Footer = () => {
     return (
-        <footer className="bg-white py-8 border-t border-gray-200">
-            <div className="container mx-auto px-4 md:px-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Address */}
-                    <div className="text-gray-600 text-sm">
-                        <p>400 University Drive Suite 200 Coral Gables,</p>
-                        <p>FL 33134 USA</p>
-                    </div>
+        
+<footer className="text-gray-600 body-font bg-yellow-400">
+  <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      
+      <span className="ml-3 text-xl">CAR CENTER</span>
+    </a>
+    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+      
+      <a
+        href="https://twitter.com/knyttneve"
+        className="text-gray-600 ml-1"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        @knyttneve
+      </a>
+    </p>
+    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a className="text-gray-500">
+        <svg
+          fill="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          className="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+        </svg>
+      </a>
+      <a className="ml-3 text-gray-500">
+        <svg
+          fill="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          className="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+        </svg>
+      </a>
+      <a className="ml-3 text-gray-500">
+        <svg
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          className="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+          <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+        </svg>
+      </a>
+      <a className="ml-3 text-gray-500">
+        <svg
+          fill="currentColor"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={0}
+          className="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="none"
+            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+          />
+          <circle cx={4} cy={4} r={2} stroke="none" />
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
 
-                    {/* Links */}
-                    <div>
-                        <h3 className="text-gray-500 text-sm font-medium mb-3">Links</h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    Shop
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
 
-                    {/* Help */}
-                    <div>
-                        <h3 className="text-gray-500 text-sm font-medium mb-3">Help</h3>
-                        <ul>
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    Payment Options
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    Return
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-800 hover:text-gray-900 transition">
-                                    Privacy Policies
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Newsletter */}
-                    <div>
-                        <h3 className="text-gray-500 text-sm font-medium mb-3 ml-4">Newsletter</h3>
-                        <div className="flex flex-wrap sm:flex-nowrap items-center">
-                            <input
-                                type="email"
-                                placeholder="Enter Your Email Address"
-                                className="flex-1 px-4 py-2 border-gray-300 rounded-l-md focus:outline-none focus:ring-1 focus:ring-gray-400 mb-2 sm:mb-0"
-                            />
-                            <button className="text-black px-4 py-2 rounded-r-md hover:underline transition">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Bottom Section */}
-                <div className="mt-8 text-center text-gray-600 text-sm">
-                    <hr />
-                    <p className="pt-4">2022 Meubel House. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
     );
 };
 

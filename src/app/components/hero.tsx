@@ -1,8 +1,10 @@
-import React from "react";
-import Image from "next/image";
+import Link from 'next/link'
+import React from 'react'
+import Image from 'next/image'
 
- export const Hero = () => {
+const Hero = ({data}:{data:Blog}) => {
   return (
+<<<<<<< HEAD
     <>
       {/* First Section: Hero Section */}
       <section className="bg-amber-100 flex items-center justify-center h-100%">
@@ -23,52 +25,50 @@ import Image from "next/image";
 
         {/* Right Section */}
         <div className="w-1/2 h-full flex items-center justify-center">
+=======
+    <div>
+        <section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-wrap -m-4">
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+>>>>>>> 5bef5c62bdafe7841f4a0228e7412ce84ea499f8
           <Image
-            src="/h.png.png"
-            alt="Rocket Single Seater"
-            width={500} 
-            height={500} 
-            className="object-contain"
+            className="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="/op.png"
+            width={500}
+            height={500}
+            alt="blog"
           />
-        </div>
-      </section>
-
-      {/* Second Section: Top Pick */}
-      <section className="bg-gray-100 text-black py-10">
-        <div className="container mx-auto px-4">
-          
-          <div className="flex justify-between">
-            <div className="w-1/2 pr-4">
-            <Image
-                src="/zz.png"
-                alt="Side Table"
-                width={400}
-                height={400}
-                className="object-contain"
-              />
-              <h3 className="text-3xl font-semibold mb-2">Side Table</h3>
-              <a href="#" className="underline text-sm mb-4">
-                View More
-              </a>
+          <div className="p-6">
+           
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+              {data.Title}
+            </h1>
+            <p className="leading-relaxed mb-3">
+             {data.Paragraph}
+            </p>
+            <div className="flex items-center flex-wrap ">
+              <Link href={`/blog/${data.slug}`}  className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                Learn More
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </Link>
               
-            </div>
-            <div className="w-1/2 pl-4">
-            <Image
-                src="/bh.png"
-                alt="Another Side Table"
-                width={400}
-                height={400}
-                className="object-contain"
-              />
-
-              <h3 className="text-3xl font-semibold mb-2">Side Table</h3>
-              <a href="#" className="underline text-sm mb-4">
-                View More
-              </a>
-             
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </section>
 
       {/* Third Section: Product Grid */}
@@ -190,77 +190,17 @@ import Image from "next/image";
           <span>⏰ 5 mins</span>
           <span>📅 {new Date().toLocaleDateString()}</span>
         </div>
+=======
+>>>>>>> 5bef5c62bdafe7841f4a0228e7412ce84ea499f8
       </div>
-
-      <div className="text-center">
-        <Image
-          src="/Rectangle 14.png"
-          alt="Blog Post 2"
-          width={150}
-          height={150}
-          className="object-contain mx-auto"
-        />
-        <p className="text-lg">Going all-in with millennial design</p>
-        <a href="#" className="underline font-bold text-xl mb-4">
-          Read More
-        </a>
-        <div className="flex justify-center gap-4">
-          <span>⏰ 5 mins</span>
-          <span>📅 {new Date().toLocaleDateString()}</span>
-        </div>
       </div>
-
-      <div className="text-center">
-        <Image
-          src="/Rectangle 15.png"
-          alt="Blog Post 3"
-          width={150}
-          height={150}
-          className="object-contain mx-auto"
-        />
-        <p className="text-lg">Going all-in with millennial design</p>
-        <a href="#" className="underline font-bold text-xl mb-4">
-          Read More
-        </a>
-        <div className="flex justify-center gap-4">
-          <span>⏰ 5 mins</span>
-          <span>📅 {new Date().toLocaleDateString()}</span>
-        </div>
       </div>
-    </div>
-
-    {/* View All Posts Button */}
-    <div className="text-center mt-8">
-      <a href="/blog" className="underline text-sm">
-        View All Posts
-      </a>
-    </div>
-  </div>
+     
 </section>
 
 
-           {/* Sixth Section: Instagram */}
-           <section className="relative w-full h-[450px]">
-        {/* Background Image */}
-        <Image
-          src="/jio.jpg"
-          alt="insta"
-          layout="fill" // Fills the parent container
-          objectFit="cover" // Ensures the image covers the container
-          className="object-cover"
-        />
-        {/* Text Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-[#000000]px-4">
-          <h1 className="text-[24px] md:text-[36px] font-bold">Our Instagram</h1>
-          <p className="opacity-[0.8] max-w-[600px] text-[16px] md:text-[18px] mt-2">
-            Follow our store on Instagram
-          </p>
-          <button className="mt-7 px-[50px] py-[20px] rounded-full shadow-2xl bg-[#FAFAFA]  text-black font-semibold">
-            Follow Us
-          </button>
-        </div>
-      </section>
-    </>
-  );
-};
+    </div>
+  )
+}
 
+export default Hero

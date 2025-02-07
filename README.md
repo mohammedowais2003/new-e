@@ -38,6 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 "# e-commerce" 
 "# commerceowais" 
 "# e-commerce-45" 
+<<<<<<< HEAD
 "# e-updated-" 
 "# update-e" 
 "# updated-web-1" 
@@ -51,4 +52,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 "# update-e" 
 "# update--e" 
 "# updated-e-" 
+"# update-e" 
+=======
+"# dynamic-blog" 
+"# dynamic-blog" 
+>>>>>>> 5bef5c62bdafe7841f4a0228e7412ce84ea499f8
+"# update-e" 
 "# update-e" 
